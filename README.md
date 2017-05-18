@@ -5,10 +5,15 @@ npm install để nó cập nhật toàn bộ package.
 
 Phân công:
 Thuyết trình
+
 Grid : Khôi
+
 Tables: Hải
-Forms: Linh
+
+Forms: Duyên
+
 Button(+ active, hover):Linh
+
 
 Project:
 Index Bon appétit: Linh
