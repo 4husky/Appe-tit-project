@@ -1,22 +1,11 @@
+//Xử lí khi page load
 +function($){
 	$("#thucdon").hide();
+	$("#formdatmon").hide();
 }(jQuery);
 
-$( function() {
-    $( "#dialog-form" ).dialog({
-    autoOpen: false,
-    modal: true,
-    height: 400,
-    width: 350,
- 	
-  });
-  
-  $("#btnsetting").click(function() {
-    $("#dialog-form").dialog('open');
-  });
 
-});
-
+//Xử lí ServiveTabs -  Hiển thị hình ảnh trong mục Thực đơn
 +function($){
 	$("#thucdon-com-tam-suon-ong-gia-galaxy").click(function(){	
 		$("#thucdon").hide();
@@ -96,17 +85,80 @@ $( function() {
 	});	
 }(jQuery);
 
-/*+function($){
-	$("#btn_datmon_1").click(function(){
-		$("#dialog").showModal();
+//Xử lí ServiceList - Hiển thị cảnh báo khi chọn các phần tử trong List
++function($){
+	var x = "Tính năng này đang được phát triển";
+	$("#btn-bun-bo-o-gai").click(function(){
+		alert(x);
 	});
-	$("#btn_datmon_2").click(function(){
-
+	$("#btn-vi-thai-am-thuc-thai-lan").click(function(){
+		alert(x);
 	});
-	$("#btn_datmon_3").click(function(){
-
+	$("#btn-ABMA-nem-nuong-nha-trang").click(function(){
+		alert(x);
 	});
-	$("#btn_datmon_4").click(function(){
+	$("#btn-rang-rua-he-com-ga").click(function(){
+		alert(x);
+	});
+	$("#btn-quan-ga-co-bap").click(function(){
+		alert(x);
+	});
+	$("#btn-lau-ga-tiem-ot-hiem").click(function(){
+		alert(x);
+	});
+	$("#btn-ga-nuong-o-o-o-le-van-sy").click(function(){
+		alert(x);
+	});
+	$("#btn-uncle-tea-tra-dai-loan-dinh-tien-hoang").click(function(){
+		alert(x);
+	});
+	$("#btn-kimbong-toast-drink").click(function(){
+		alert(x);
+	});
+}(jQuery);
 
-	});	
-}(jQuery);*/
+//Xử lí ServicePanels - Hiển thị form đặt món khi nhấn nút đặt ngay
++function($){ 
+  	$("#btn_datmon_1").click(function() {
+    	$("#formdatmon").show();    	
+  	});
+  	$("#btn_datmon_2").click(function() {
+    	$("#formdatmon").show();
+  	});
+  	$("#btn_datmon_3").click(function() {
+    	$("#formdatmon").show();
+  	});
+  	$("#btn_datmon_4").click(function() {
+    	$("#formdatmon").show();
+  	});  
+}(jQuery);
+
+//Xử lí các event trên form đặt món
++function($){
+	$("#btn_datmonngay").click(function(){
+		if(validateEmail($("input[name='email']").val()) == true){
+			if(($("input[name='name']").val() != "") && ($("input[name='phone']").val() != "") && ($("textarea[name='comment']").val() != "")){
+				$("input[name='name']").val("");
+				$("input[name='email']").val("");
+				$("input[name='phone']").val("");
+				$("textarea[name='comment']").val("");
+				$("#formdatmon").hide();
+	  			alert("Bạn đã đặt món thành công.");
+			}  	
+			else{
+				alert("Thông tin còn trống vui lòng kiểm tra lại.");
+			}
+		}
+		else{
+			alert("Email chưa chính xác vui lòng kiểm tra lại");
+		}			
+  	});   		
+  	function validateEmail(email) {
+	    var pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	    return pattern.test(email);
+	}
+	$("#btn_huydatmonngay").click(function(){
+		$("#formdatmon").hide();
+  	});    	
+}(jQuery);
+

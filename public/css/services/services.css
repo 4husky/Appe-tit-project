@@ -2,3 +2,14 @@ a:hover{
 	text-decoration: none;
 	color: #ff0202;
 }
+h2{
+    text-align:center;
+}
+@media(max-width: 768px){
+	#formdatmon{
+		width: 325px;
+	}
+}
+.p_diachi{
+	color: #333;
+}
