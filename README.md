@@ -1,6 +1,6 @@
 # Appe-tit-project - HaiBui - Service
 
-#Hoàn tất cơ bản
+# Hoàn tất cơ bản
 
 -ServicePanels ( 4 cái image ở giữa)
 <ul>
@@ -23,11 +23,11 @@
 	<li>Click vào địa chỉ quán                                -  NONE</li>
 </ul>
 
-#Tính thay link tên quán trong ServiceList thành cái href đến phần Single Portfolio Item - cái này trong phần Duyên nếu kịp sẽ làm sau
+# Tính thay link tên quán trong ServiceList thành cái href đến phần Single Portfolio Item - cái này trong phần Duyên nếu kịp sẽ làm sau
 
-#Ai rảnh thì test giùm , lỗi hoặc góp ý chỉnh sửa thì báo lại
+# Ai rảnh thì test giùm , lỗi hoặc góp ý chỉnh sửa thì báo lại
 
-##Một số thư mục thay đổi
+## Một số thư mục thay đổi
 <ul>
 	<li>app.js - thêm route </li>
 	<li>/public/css/services</li>
