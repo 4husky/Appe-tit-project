@@ -15,7 +15,7 @@
 	<li>Xử lí input email nhập có dạng email                  -  OK</li>
 	<li>Nhập đầy đủ thông tin mới thành công                  -  OK</li>
 	<li>Xử lí 2 button của form                               -  OK</li>
-	<li>Hiển thị list món ăn quán đó                          -  NONE</li>
+	<li>Hiển thị list món ăn quán đó                          -  OK</li>
 </ul>
 -ServiceList (9 cái dòng cuối cùng)
 <ul>
@@ -23,7 +23,7 @@
 	<li>Click vào địa chỉ quán                                -  NONE</li>
 </ul>
 
-# Tính thay link tên quán trong ServiceList thành cái href đến phần Single Portfolio Item - cái này trong phần Duyên nếu kịp sẽ làm sau
+-Tính thay link tên quán trong ServiceList thành cái href đến phần Single Portfolio Item - cái này trong phần Duyên nếu kịp sẽ làm sau
 
 # Ai rảnh thì test giùm , lỗi hoặc góp ý chỉnh sửa thì báo lại
 
