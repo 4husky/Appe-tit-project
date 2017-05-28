@@ -2,6 +2,7 @@
 +function($){
 	$("#thucdon").hide();
 	$("#formdatmon").hide();
+	$("#servicemaps").hide();
 }(jQuery);
 
 
@@ -91,6 +92,32 @@
 		/*$("#service-two").append(drink_1, drink_2, drink_3);
 		$("#service-three").append(orther_1, orther_2, orther_3);*/
 	});	
+}(jQuery);
+//Xử lí ServiceTabs - Hiển thị iframe google khi nhấp vào địa chỉ
++function($){
+	$("#dia-chi-thucdon-com-tam-suon-ong-gia-galaxy").click(function(){
+		$("#servicemaps").show();	
+		$("#servicemaps_iframe").children("iframe").remove();
+		$("#servicemaps_iframe").append('<iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ek8yMzYgTmd1eeG7hW4gSOG7k25nIMSQw6BvLCBwaMaw4budbmcgMTQsIFTDom4gQsOsbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt&key=AIzaSyB7o4nDiGfqDsEuMrg2iJEPH9F8RqWXYf4" allowfullscreen></iframe>');
+	});		
+	$("#dia-chi-tra-sua-ngo-duc-ke").click(function(){
+		$("#servicemaps").show();	
+		$("#servicemaps_iframe").children("iframe").remove();
+		$("#servicemaps_iframe").append('<iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-e6_NkEvdTERo0WnGrmzA5I&key=AIzaSyB7o4nDiGfqDsEuMrg2iJEPH9F8RqWXYf4" allowfullscreen></iframe>');
+	});	
+	$("#dia-chi-buddy-chicken").click(function(){
+		$("#servicemaps").show();	
+		$("#servicemaps_iframe").children("iframe").remove();
+		$("#servicemaps_iframe").append('<iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ05-S2kAvdTERWrMf60MjLZw&key=AIzaSyB7o4nDiGfqDsEuMrg2iJEPH9F8RqWXYf4" allowfullscreen></iframe>');
+	});	
+	$("#dia-chi-pha-lau-thailand").click(function(){
+		$("#servicemaps").show();	
+		$("#servicemaps_iframe").children("iframe").remove();
+		$("#servicemaps_iframe").append('<iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:Ekk1MTUgQW4gRMawxqFuZyBWxrDGoW5nLCBwaMaw4budbmcgMywgUXXhuq1uIDUsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt&key=AIzaSyB7o4nDiGfqDsEuMrg2iJEPH9F8RqWXYf4" allowfullscreen></iframe>');
+	});	
+	$("#close_servicemaps").click(function(){
+		$("#servicemaps").hide();
+	});
 }(jQuery);
 
 //Xử lí ServiceList - Hiển thị cảnh báo khi chọn các phần tử trong List

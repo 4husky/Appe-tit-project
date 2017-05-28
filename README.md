@@ -5,7 +5,7 @@
 -ServicePanels ( 4 cái image ở giữa)
 <ul>
 	<li>Click vào tên quán hiện ra thực đơn hình ảnh quán đó  -  OK</li>
-	<li>Click vào địa chỉ quán                                -  NONE</li>
+	<li>Click vào địa chỉ quán => hiện ra google map          -  OK</li>
 	<li>Click vào button đặt món => Hiển thị form đặt món     -  OK</li>
 </ul> 
 -Form Đặt Món ( Hiển thị khi click vào nút đặt món)
@@ -32,7 +32,7 @@
 	<li>app.js - thêm route </li>
 	<li>/public/css/services</li>
 	<li>/public/js/services</li>
-	<li>/public/imd/services_pictures</li>
+	<li>/public/img/services_pictures</li>
 	<li>/routes/services.js</li>
 	<li>/views/services</li>
 </ul>
