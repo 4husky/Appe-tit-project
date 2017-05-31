@@ -3,12 +3,16 @@ var router = express.Router();
 
 /* GET home page. */
 
-router.get('/', function(req, res) {
-  res.render('blog/index', { title: 'Express' });
+router.get('/:id', function(req, res) {
+  var id = req.params.id;
+  var url = 'blog/page_'+ String(id)+'/index';	
+  res.render(url, { myurl: url });
 });
 
-router.get('/post/1', function(req, res) {
-  res.render('blog/Post/Post_1/post_1', { title: 'Express' });
+router.get('/post/:id', function(req, res) {
+  var id = req.params.id;
+  var url = 'blog/posts/post_'+ String(id) +'/index';
+  res.render(url, { myurl: url });
 });
 
 module.exports = router;
