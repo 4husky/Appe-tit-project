@@ -15,4 +15,9 @@ router.get('/post/:id', function(req, res) {
   res.render(url, { myurl: url });
 });
 
+router.get('/faq', function(req, res) {
+  var url = 'other/faq';
+  console.log(url);
+  res.render('other/faq', { myurl: url });
+});
 module.exports = router;
