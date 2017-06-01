@@ -9,6 +9,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var contact = require('./routes/contact');
 var blog = require('./routes/blog');
+var location = require('./routes/location')
+
 
 var other = require('./routes/other');
 
@@ -35,10 +37,11 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public', express.static(path.join(__dirname + '/public')));
-//use route 
+//use route
 app.use('/', routes);
 app.use('/',contact);
 app.use('/blog',blog);
+app.use('/location',location)
 
 app.use('/other',other);
 
