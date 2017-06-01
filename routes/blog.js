@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/post/1', function(req, res) {
-  res.render('blog/Post/Post_1/post_1', { title: 'Express' });
+  res.render('blog/Post/post_1', { title: 'Express' });
 });
 
 module.exports = router;
