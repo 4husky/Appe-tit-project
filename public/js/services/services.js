@@ -120,6 +120,7 @@
 	});
 }(jQuery);
 
+/*
 //Xử lí ServiceList - Hiển thị cảnh báo khi chọn các phần tử trong List
 +function($){
 	var x = "Tính năng này đang được phát triển";
@@ -151,6 +152,8 @@
 		alert(x);
 	});
 }(jQuery);
+*/
+
 
 //Xử lí ServicePanels - Hiển thị form đặt món khi nhấn nút đặt ngay
 +function($){ 
