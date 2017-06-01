@@ -48,6 +48,7 @@
 .review-user{
 	height: 40px;
 	margin: 0;
+	padding: 0;
 }
 
 .user-name{
@@ -75,5 +76,34 @@
     height: 100px; /* Or whatever */
     margin: auto;  /* Magic! */
 }
+.comment{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.comment-block{
+	height: 200px;
+	width: auto;
 
+}
+.small-pic{
+	margin-left: 0;
+	padding: 0;
+	margin-right: 18px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
 
+.comment-img{
+
+	height: auto;
+	width: auto;
+	height: 370px;
+	width: 700px;
+}
+.pic-click{
+
+	height: auto;
+	width: auto;
+	height: 92.5px;
+	width: 92.5px;
+}

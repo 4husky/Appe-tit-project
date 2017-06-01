@@ -11,6 +11,18 @@
         interval: 5000 //changes the speed
     })
     </script>
+        <script>
+    $(document).ready(function(){
+            $(".pic-click").click(function(){
+            console.log("test");
+            var url = $(this).attr("src");
+            
+            $("#big-pic").attr("src",url);
+            console.log($("#big-pic").attr("src"));
+        });
+          });
+
+    </script>
 
 </body>
 
