@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var contact = require('./routes/contact');
 var blog = require('./routes/blog');
+var other = require('./routes/other');
 
 var app = express();
 
@@ -34,7 +35,7 @@ app.use('/public', express.static(path.join(__dirname + '/public')));
 app.use('/', routes);
 app.use('/',contact);
 app.use('/blog',blog);
-
+app.use('/other',other);
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
