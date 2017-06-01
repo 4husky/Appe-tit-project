@@ -1,0 +1,66 @@
+ 
+<div class="container-fluid" id="formdatmon">
+    <div class="row-fluid" >         
+        <div class="col-md-12" id="box">
+          <h2 style="color: #fff"><b>Vui lòng điền thông tin bên dưới</b></h2>        
+            <hr>
+              <form class="form-horizontal" action=" " method="">
+                <fieldset>
+                    <!-- Form Name -->
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="name" placeholder="Name" class="form-control" type="text" required>
+                            </div>
+                        </div>
+                    </div>              
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="email" placeholder="E-Mail Address" class="form-control" type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                <input name="phone" placeholder="0999 999 9999" class="form-control" type="number" required minlength="8" maxlength="11">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">                                             
+                        <div class="col-md-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
+                                <select id="list-menu" name="selectbasic" class="form-control">
+                                    <option value="0">Menu</option>                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <div class="col-md-12 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" name="comment" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">                           
+                            <button type="button" class="btn btn-warning pull-right" id="btn_datmonngay">Đặt món ngay &nbsp<span class="glyphicon glyphicon-send"></span></button>
+                            <button type="button" class="btn btn-primary pull-right" id="btn_huydatmonngay"  style="margin-right: 15px">Hủy &nbsp<span class="glyphicon glyphicon-remove"></span></button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div> 
+</div>
