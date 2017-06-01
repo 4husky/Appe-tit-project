@@ -1,0 +1,79 @@
+.logo{
+	font-family: "Streetwear";
+	font-size: 30px;
+	color: white !important;
+}
+
+.panel-body{
+	padding: 0px;
+}
+.store-label{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.addr-label{
+	font-size: 12px;
+	color: gray;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.img-portfolio{
+	margin-bottom: 0px;
+	margin-right: 0px;
+	width: auto;
+	height: auto;
+	width: 800px;
+	height: 250px;
+}
+
+.myimg{
+	width: auto;
+	height: auto;
+	width: 800px;
+	height: 300px;
+}
+
+.blog-header{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.user-ava{
+	height: inherit;
+}
+.review-user{
+	height: 40px;
+	margin: 0;
+}
+
+.user-name{
+	vertical-align: middle;
+	height: 40px;
+}
+
+.name{
+	padding: 0;
+	padding-top: 7px;
+}
+
+.store-review{
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 5px;
+}
+.parent{
+    display: flex;
+    height: 300px; /* Or whatever */
+    background-color: #000
+}
+.child {
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin: auto;  /* Magic! */
+}
+
+
