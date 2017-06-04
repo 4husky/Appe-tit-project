@@ -10,8 +10,9 @@
 ======
 ### Requirement:
  Phải cài đặt:
- 1.Nodejs
- 2.npm
+ ##### 1. Nodejs**
+
+ ##### 2. npm**
 ### How to run it:
 1. Mở terminal/command line chạy lệnh `npm install`
 2. Để khởi động chạy lệnh `node bin/www`
