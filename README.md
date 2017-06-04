@@ -1,4 +1,4 @@
-# Appe-tit-project - Nhóm 17
+# Appétit-project - Nhóm 17
 
 ======
 ## Sinh viên thực hiện:
